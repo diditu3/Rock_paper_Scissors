@@ -1,6 +1,6 @@
 # Flutter Rock-Paper-Scissors Game
 
-A simple practice project built in Flutter to create a Rock-Paper-Scissors game. It focuses on practicing basic state management, handling user click events, and working with async Timers.
+A practice project built in Flutter to create a Rock-Paper-Scissors game. It focuses on practicing basic state management, handling user click events, and working with async Timers.
 
 ## How it works
 * **Player Selection:** Clicking one of the lower image assets (`0` for Rock, `1` for Paper, `2` for Scissors) triggers your selection.
