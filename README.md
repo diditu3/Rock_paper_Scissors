@@ -1,16 +1,18 @@
-# game
+# Flutter Rock-Paper-Scissors Game
 
-A new Flutter project.
+A simple practice project built in Flutter to create a Rock-Paper-Scissors game. It focuses on practicing basic state management, handling user click events, and working with async Timers.
 
-## Getting Started
+## How it works
+* **Player Selection:** Clicking one of the lower image assets (`0` for Rock, `1` for Paper, `2` for Scissors) triggers your selection.
+* **Delayed AI Turn:** An asynchronous `Timer` introduces a 1-second delay before the computer randomly throws its move using `Random().nextInt(3)`.
+* **Game Logic:** Compares choices to evaluate wins, losses, or ties, dynamically incrementing the persistent tracking scoreboard on screen.
 
-This project is a starting point for a Flutter application.
+## Project Structure
+* `main.dart` - Standard application bootstrapper pointing directly to the main layout.
+* `HomePage.dart` - Controls the core visual layout grid, win/loss state properties, and operational game logic loops.
+* `assets/images/` - Target path holding the game graphics (`0.png`, `1.png`, `2.png`, and a placeholder asset `3.png`).
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How to run it
+1. Make sure you map your image assets correctly inside your local `pubspec.yaml` file.
+2. Resolve packages: `flutter pub get`
+3. Launch on your emulator or connected device: `flutter run`
